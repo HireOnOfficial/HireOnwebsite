@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HireOn - Candidates</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; }
+    body { background-color: #f8f9fa; color: #333; }
+
+    /* Header */
+    header { background-color: #0a66c2; color: #fff; padding: 20px 10px; text-align: center; }
+    header h1 { font-size: 2rem; }
+
+    /* Navigation */
+    nav { text-align: center; background: #fff; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    nav a {
+      margin: 0 15px;
+      color: #0a66c2;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #004182; }
+
+    /* Container */
+    .container { max-width: 900px; margin: auto; padding: 30px 15px; }
+
+    /* Search Filters */
+    .search-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+      justify-content: center;
+    }
+    .search-bar input, .search-bar select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      flex: 1;
+      min-width: 150px;
+    }
+    .search-bar button {
+      background-color: #0a66c2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .search-bar button:hover { background-color: #004182; }
+
+    /* Candidate Cards */
+    .candidate-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .candidate-card h3 { color: #0a66c2; margin-bottom: 5px; }
+    .candidate-card p { margin-bottom: 5px; }
+    .invite-btn {
+      align-self: flex-start;
+      background-color: #0a66c2;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+    .invite-btn:hover { background-color: #004182; }
+
+    footer {
+      background: #0a66c2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>HireOn Candidate Profiles</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="candidates.html">Candidates</a>
+    <a href="employers.html">Employers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Content -->
+  <div class="container">
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search by name or role">
+      <select>
+        <option value="">Select location</option>
+        <option>Karachi</option>
+        <option>Lahore</option>
+        <option>Islamabad</option>
+        <option>Dubai</option>
+      </select>
+      <button>Search</button>
+    </div>
+
+    <!-- Candidate Profiles -->
+    <div class="candidate-card">
+      <h3>Sarah Ahmed</h3>
+      <p><strong>Position:</strong> Data Analyst</p>
+      <p><strong>Location:</strong> Lahore</p>
+      <p><strong>Experience:</strong> 3 years</p>
+      <p><strong>Skills:</strong> Excel, SQL, Power BI, Python</p>
+      <a href="#" class="invite-btn">Invite to Apply</a>
+    </div>
+
+    <div class="candidate-card">
+      <h3>Ali Khan</h3>
+      <p><strong>Position:</strong> Software Developer</p>
+      <p><strong>Location:</strong> Karachi</p>
+      <p><strong>Experience:</strong> 4 years</p>
+      <p><strong>Skills:</strong> JavaScript, React, Node.js, MySQL</p>
+      <a href="#" class="invite-btn">Invite to Apply</a>
+    </div>
+
+    <div class="candidate-card">
+      <h3>Fatima Noor</h3>
+      <p><strong>Position:</strong> Marketing Coordinator</p>
+      <p><strong>Location:</strong> Dubai</p>
+      <p><strong>Experience:</strong> 2 years</p>
+      <p><strong>Skills:</strong> SEO, Google Ads, Content Creation</p>
+      <a href="#" class="invite-btn">Invite to Apply</a>
+    </div>
+
+    <div class="candidate-card">
+      <h3>Hassan Raza</h3>
+      <p><strong>Position:</strong> Sales Executive</p>
+      <p><strong>Location:</strong> Islamabad</p>
+      <p><strong>Experience:</strong> 5 years</p>
+      <p><strong>Skills:</strong> Client Management, CRM, Negotiation</p>
+      <a href="#" class="invite-btn">Invite to Apply</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 HireOn. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
