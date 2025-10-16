@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HireOn - Jobseekers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; font-family: 'Roboto', sans-serif; }
+    body { background-color: #f8f9fa; color: #333; }
+    header { background-color: #0a66c2; color: #fff; padding: 20px 10px; text-align: center; }
+    header h1 { font-size: 2rem; }
+    nav { text-align: center; margin: 20px 0; }
+    nav a { margin: 0 15px; color: #0a66c2; font-weight: bold; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { color: #0a66c2; margin-bottom: 15px; text-align: center; }
+    form { display: flex; flex-direction: column; }
+    label { margin-top: 10px; font-weight: bold; }
+    input, textarea, select { padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    .btn { background-color: #0a66c2; color: #fff; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer; margin-top: 20px; }
+    .btn:hover { background-color: #004182; }
+    @media(max-width:600px) { .container { padding: 10px; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HireOn - Jobseekers</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobseekers.html">Jobseekers</a>
+    <a href="employers.html">Employers</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Create Your Jobseeker Profile</h2>
+    <form id="jobseekerForm">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" required>
+
+      <label for="linkedin">LinkedIn URL</label>
+      <input type="url" id="linkedin">
+
+      <label for="resume">Resume Link</label>
+      <input type="url" id="resume">
+
+      <label for="education">Education</label>
+      <textarea id="education" rows="2"></textarea>
+
+      <label for="experience">Experience</label>
+      <textarea id="experience" rows="2"></textarea>
+
+      <label for="certifications">Certifications</label>
+      <textarea id="certifications" rows="2"></textarea>
+
+      <label for="achievements">Achievements</label>
+      <textarea id="achievements" rows="2"></textarea>
+
+      <label for="projects">Projects</label>
+      <textarea id="projects" rows="2"></textarea>
+
+      <button type="submit" class="btn">Submit Profile</button>
+    </form>
+  </div>
+
+  <footer style="background-color:#0a66c2;color:#fff;text-align:center;padding:20px;margin-top:30px;">
+    &copy; 2025 HireOn. All rights reserved.
+  </footer>
+
+  <script>
+    const form = document.getElementById('jobseekerForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Profile submitted successfully! (Later we will connect this to Google Sheets backend)');
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
