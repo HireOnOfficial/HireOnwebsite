@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HireOn – Find Jobs & Hire Talent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; font-family: 'Roboto', sans-serif; }
+    body { background-color: #f8f9fa; color: #333; }
+    header { background-color: #0a66c2; color: #fff; padding: 20px 10px; text-align: center; }
+    header h1 { font-size: 2rem; margin-bottom: 10px; }
+    header p { font-size: 1rem; }
+    nav { text-align: center; margin: 20px 0; }
+    nav a { margin: 0 15px; color: #0a66c2; font-weight: bold; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .banner { background-color: #e1ecf9; padding: 50px 10px; text-align: center; }
+    .banner h2 { font-size: 1.8rem; margin-bottom: 15px; }
+    .banner p { font-size: 1.1rem; margin-bottom: 20px; }
+    .btn { background-color: #0a66c2; color: #fff; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; }
+    .btn:hover { background-color: #004182; }
+    .features { display: flex; flex-wrap: wrap; justify-content: center; padding: 40px 10px; }
+    .feature-box { background: #fff; border-radius: 8px; padding: 20px; margin: 10px; flex: 1 1 250px; max-width: 300px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .feature-box h3 { margin-bottom: 10px; color: #0a66c2; }
+    .feature-box p { font-size: 0.95rem; }
+    footer { background-color: #0a66c2; color: #fff; text-align: center; padding: 20px 10px; margin-top: 30px; }
+    @media(max-width:600px) {
+      .features { flex-direction: column; align-items: center; }
+      header h1 { font-size: 1.5rem; }
+      .banner h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HireOn</h1>
+    <p>Connecting Top Talent with Leading Companies</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobseekers.html">Jobseekers</a>
+    <a href="employers.html">Employers</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="banner">
+    <h2>Find Your Dream Job or Hire Top Talent</h2>
+    <p>Sign up today to access thousands of job listings or post your job openings.</p>
+    <a class="btn" href="jobseekers.html">Get Started</a>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>Job Search</h3>
+      <p>Browse thousands of job listings from top companies in your area.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Apply Online</h3>
+      <p>Create your profile and apply to jobs directly from your dashboard.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Employer Dashboard</h3>
+      <p>Post jobs, manage applicants, and find the perfect candidate for your company.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 HireOn. All rights reserved.
+  </footer>
+</body>
+</html>
