@@ -8,10 +8,143 @@
   <style>
     * { box-sizing: border-box; margin:0; padding:0; font-family: 'Roboto', sans-serif; }
     body { background-color: #f8f9fa; color: #333; }
+
+    /* Header */
     header { background-color: #0a66c2; color: #fff; padding: 20px 10px; text-align: center; }
     header h1 { font-size: 2rem; }
-    nav { text-align: center; margin: 20px 0; }
-    nav a { margin: 0 15px; color: #0a66c2; font-weight: bold; text-decoration: none; }
-    nav a:hover { text-decoration: underline; }
-    .container { max-width: 900px; margin: auto; padding: 20px; }
-    h2 {
+
+    /* Navigation */
+    nav { text-align: center; background: #fff; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    nav a {
+      margin: 0 15px;
+      color: #0a66c2;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #004182; }
+
+    /* Container */
+    .container { max-width: 900px; margin: auto; padding: 30px 15px; }
+
+    /* Search bar */
+    .search-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+      justify-content: center;
+    }
+    .search-bar input, .search-bar select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      flex: 1;
+      min-width: 150px;
+    }
+    .search-bar button {
+      background-color: #0a66c2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .search-bar button:hover { background-color: #004182; }
+
+    /* Job cards */
+    .job-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .job-card h3 { color: #0a66c2; margin-bottom: 10px; }
+    .job-card p { margin-bottom: 10px; }
+    .apply-btn {
+      display: inline-block;
+      background-color: #0a66c2;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .apply-btn:hover { background-color: #004182; }
+
+    footer {
+      background: #0a66c2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>HireOn Job Listings</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="candidates.html">Candidates</a>
+    <a href="employers.html">Employers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Content -->
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" placeholder="Job title or keyword">
+      <select>
+        <option value="">Select location</option>
+        <option>Karachi</option>
+        <option>Lahore</option>
+        <option>Islamabad</option>
+        <option>Dubai</option>
+      </select>
+      <button>Search</button>
+    </div>
+
+    <!-- Sample Jobs -->
+    <div class="job-card">
+      <h3>Marketing Executive</h3>
+      <p><strong>Company:</strong> BlueSky Media</p>
+      <p><strong>Location:</strong> Dubai</p>
+      <p><strong>Experience:</strong> 2+ years</p>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h3>Software Engineer</h3>
+      <p><strong>Company:</strong> TechNova</p>
+      <p><strong>Location:</strong> Lahore</p>
+      <p><strong>Experience:</strong> 1–3 years</p>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h3>Sales Manager</h3>
+      <p><strong>Company:</strong> HireOn Recruitment</p>
+      <p><strong>Location:</strong> Karachi</p>
+      <p><strong>Experience:</strong> 4+ years</p>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 HireOn. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
+
